@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>if  else </title>
+    </head>
+    <body>
+        <h1>if,else statement</h1>
+        <script type="text/javascript">
+        var balance = 20.20; //acccount balance
+var checkBalance = true; // check balance
+var isActive = true; //account is active
+
+if (checkBalance) {
+  if (isActive && balance > 0) {
+      console.log("Your balance is $" + balance + ".");
+  }
+  else if (!isActive) {
+      console.log("Your account is no longer active.");
+  }
+  else if (balance === 0) {
+      console.log("Your account is empty.");
+  }
+  else {
+      console.log("Your balance is negative. Please contact bank.");
+    }
+  }
+else {
+    console.log("Thank you. Have a nice day!");
+}</script>
+    </body>
+</html>
