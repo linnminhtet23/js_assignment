@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>if  else </title>
-    </head>
-    <body>
-        <h1>if,else statement</h1>
-        <script type="text/javascript">
-        var balance = 20.20; //acccount balance
-var checkBalance = true; // check balance
-var isActive = true; //account is active
 
-if (checkBalance) {
-  if (isActive && balance > 0) {
-      console.log("Your balance is $" + balance + ".");
-  }
-  else if (!isActive) {
-      console.log("Your account is no longer active.");
-  }
-  else if (balance === 0) {
-      console.log("Your account is empty.");
-  }
-  else {
-      console.log("Your balance is negative. Please contact bank.");
-    }
-  }
-else {
-    console.log("Thank you. Have a nice day!");
-}</script>
-    </body>
+<head>
+    <title>if else </title>
+</head>
+
+<body>
+    <h1>your shirt size is</h1>
+
+    <script type="text/javascript">
+
+        var shirtWidth = prompt("Enter your shirt width");
+        var shirtLength = prompt("Enter your shirt length");;
+        var shirtSleeve = prompt("Enter your shirt sleeve");
+
+        if (shirtWidth >= 18 && shirtWidth < 20 && shirtLength >= 28 && shirtLength < 29 && shirtSleeve >= 8.13 && shirtSleeve < 8.38) {
+            document.write("S");
+        }
+        else if (shirtWidth >= 20 && shirtWidth < 22 && shirtLength >= 29 && shirtLength < 30 && shirtSleeve >= 8.38 && shirtSleeve < 8.63) {
+            document.write("M");
+        }
+        else if (shirtWidth >= 22 && shirtWidth < 24 && shirtLength >= 30 && shirtLength < 31 && shirtSleeve >= 8.63 && shirtSleeve < 8.88) {
+            document.write("L");
+        }
+        else if (shirtWidth >= 24 && shirtWidth < 26 && shirtLength >= 31 && shirtLength < 33 && shirtSleeve >= 8.88 && shirtSleeve < 9.63) {
+            document.write("XL");
+        }
+        else if (shirtWidth >= 26 && shirtWidth < 28 && shirtLength >= 33 && shirtLength < 34 && shirtSleeve >= 9.63 && shirtSleeve < 10.13) {
+            document.write("2XL");
+        }
+        else if ((shirtWidth === 28) && (shirtLength === 34) && (shirtSleeve === 10.13)) {
+            document.write("3XL");
+        }
+        else {
+            document.write("N/A");
+        }
+    </script>
+</body>
+
 </html>
