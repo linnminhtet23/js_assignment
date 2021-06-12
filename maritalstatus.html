@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marital Status</title>
+</head>
+
+<body>
+    <div id="container"></div>
+
+
+
+    <script type="text/javascript">
+        var title = document.createElement('h1');
+        var hnote = document.createTextNode('Choose your Marital Status')
+
+
+        var radiobox = document.createElement('input');
+        radiobox.type = 'radio';
+        radiobox.name='status';
+        radiobox.id = 'sg';
+        radiobox.value = 'text';
+        
+        var label = document.createElement('label');
+        label.htmlFor = 'sg';
+        var single = document.createTextNode('Single');
+
+        var mradio = document.createElement('input');
+        mradio.type = 'radio';
+        mradio.name='status';
+        mradio.id = 'married';
+        mradio.value = 'text';
+        var mlabel = document.createElement('label');
+        mlabel.htmlFor = 'married';
+        var married = document.createTextNode('Married');
+
+        var dnsRadio = document.createElement('input');
+        dnsRadio.type = 'radio';
+        dnsRadio.name='status';
+        dnsRadio.id = 'dnshare';
+        dnsRadio.value = 'text';
+        var dnslabel = document.createElement('label');
+        dnslabel.htmlFor = 'dnshare';
+        var dnShare = document.createTextNode('Do not share');
+
+        label.appendChild(single);
+        mlabel.appendChild(married);
+        dnslabel.appendChild(dnShare);
+        var newline = document.createElement('br');
+        var container = document.getElementById('container');
+
+        title.appendChild(hnote);
+        container.appendChild(title);
+        container.appendChild(radiobox);
+        container.appendChild(label);
+        container.appendChild(mradio);
+        container.appendChild(mlabel);
+        container.appendChild(dnsRadio);
+        container.appendChild(dnslabel);
+            // container.appendChild(newline);
+    </script>
+</body>
+
+</html>
