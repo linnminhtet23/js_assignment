@@ -15,11 +15,11 @@
         var hnote = document.createTextNode('Choose your Marital Status')
 
 
-        var radiobox = document.createElement('input');
-        radiobox.type = 'radio';
-        radiobox.name='status';
-        radiobox.id = 'sg';
-        radiobox.value = 'text';
+        var sgradio = document.createElement('input');
+        sgradio.type = 'radio';
+        sgradio.name='status';
+        sgradio.id = 'sg';
+        sgradio.value = 'text';
         
         var label = document.createElement('label');
         label.htmlFor = 'sg';
@@ -51,7 +51,7 @@
 
         title.appendChild(hnote);
         container.appendChild(title);
-        container.appendChild(radiobox);
+        container.appendChild(sgradio);
         container.appendChild(label);
         container.appendChild(mradio);
         container.appendChild(mlabel);
